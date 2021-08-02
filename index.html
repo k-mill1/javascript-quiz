@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!--required meta--> 
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <!--Bootstrap css-->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+        <!--Custom css-->
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="col" id="title">
+                <h1 class="text-center">Which animal would you be?</h1>
+                <br/>
+            </div>
+        
+    <!--intro content-->
+            <div id="intro" class="text-center">
+                <img src="animals.png" alt="Silhouttes of African animals in the sunset">
+                <h4 class="text-center">Answer the questions to find out what animal you most resemble</h4>
+                <br/>
+                <input type="button" value="Start Quiz" class="btn btn-success" onclick="startQuiz()"/>
+                <br/><br/>
+            </div>
+        
+
+    <!--question 1-->
+            <div id="question1">
+                <div class="row justify-content-center">
+                    <p>QUESTION 1/5</p>
+                </div>
+                <div class="row justify-content-center">
+                    <h2>What is your favourite activity?</h2>
+                </div>
+                <div class="row">
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-2">             
+                    </div>
+                    <div class="col-8">
+                        <div class="radio-toolbar">
+                            <input type="radio" id="radio1" name="quest1">
+                            <label for="radio1">Lounging by the pool</label>
+                
+                            <input type="radio" id="radio2" name="quest1">
+                            <label for="radio2">Doing winter sports</label>
+                
+                            <input type="radio" id="radio3" name="quest1">
+                            <label for="radio3">Climbing</label> 
+                        </div>
+                    </div>
+                    <div class="col-2">             
+                    </div>
+                <input type="button" value="Next" class="btn btn-success" onclick="question2()"/>
+                </div>
+            </div>
+    <!--question 2-->
+            <div id="question2">
+                <div class="row justify-content-center">
+                    <p>QUESTION 2/5</p>
+                </div>
+                <div class="row justify-content-center">
+                    <h2>What are you like around others?</h2>
+                </div>
+                <div class="row">
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-2">             
+                    </div>
+                    <div class="col-8">
+                        <div class="radio-toolbar">
+                            <input type="radio" id="radio4" name="quest2">
+                            <label for="radio4">You instantly get along with everyone</label>
+                
+                            <input type="radio" id="radio5" name="quest2">
+                            <label for="radio5">You prefer to keep to yourself</label>
+                
+                            <input type="radio" id="radio6" name="quest2">
+                            <label for="radio6">You care about social status and making a good first impression</label> 
+                        </div>
+                    </div>
+                    <div class="col-2">             
+                    </div>
+                <input type="button" value="Next" class="btn btn-success" onclick="question3()"/>
+                </div>
+            </div>
+    <!--question 3-->
+            <div id="question1">
+                <div class="row justify-content-center">
+                    <p>QUESTION 3/5</p>
+                </div>
+                <div class="row justify-content-center">
+                    <h2>What is your favourite food?</h2>
+                </div>
+                <div class="row">
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-2">             
+                    </div>
+                    <div class="col-8">
+                        <div class="radio-toolbar">
+                            <input type="radio" id="radio7" name="quest3">
+                            <label for="radio7">Fruit and healthy greens</label>
+                
+                            <input type="radio" id="radio8" name="quest3">
+                            <label for="radio8">Fish</label>
+                
+                            <input type="radio" id="radio9" name="quest3">
+                            <label for="radio9">Honey</label> 
+                        </div>
+                    </div>
+                    <div class="col-2">             
+                    </div>
+                <input type="button" value="Next" class="btn btn-success" onclick="question4()"/>
+                </div>
+            </div>         
+    <!--question 4-->
+            <div id="question1">
+                <div class="row justify-content-center">
+                    <p>QUESTION 4/5</p>
+                </div>
+                <div class="row justify-content-center">
+                    <h2>What is your ideal travel destination?</h2>
+                </div>
+                <div class="row">
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-2">             
+                    </div>
+                    <div class="col-8">
+                        <div class="radio-toolbar">
+                            <input type="radio" id="radio10" name="quest4">
+                            <label for="radio10">South America</label>
+                
+                            <input type="radio" id="radio11" name="quest4">
+                            <label for="radio11">Canada</label>
+                
+                            <input type="radio" id="radio12" name="quest4">
+                            <label for="radio12">Africa</label> 
+                        </div>
+                    </div>
+                    <div class="col-2">             
+                    </div>
+                <input type="button" value="Next" class="btn btn-success" onclick="question5()"/>
+                </div>
+            </div>         
+    <!--question 5-->
+            <div id="question1">
+                <div class="row justify-content-center">
+                    <p>QUESTION 5/5</p>
+                </div>
+                <div class="row justify-content-center">
+                    <h2>What is your personality like?</h2>
+                </div>
+                <div class="row">
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-2">             
+                    </div>
+                    <div class="col-8">
+                        <div class="radio-toolbar">
+                            <input type="radio" id="radio13" name="quest5">
+                            <label for="radio13">Mellow and relaxed</label>
+                
+                            <input type="radio" id="radio14" name="quest5">
+                            <label for="radio14">Confident and fierce</label>
+                
+                            <input type="radio" id="radio15" name="quest5">
+                            <label for="radio15">Intelligent and conscientious</label> 
+                        </div>
+                    </div>
+                    <div class="col-2">             
+                    </div>
+                <input type="button" value="Next" class="btn btn-success" onclick="results()"/>
+                </div>
+            </div>         
+    <!--Results-->       
+    <div id="result1">
+        <div class="row justify-content-center">
+            <h1>Your result:</h1>
+        </div>
+        <div class="row justify-content-center">
+            <p>You are a capybara!</p>
+        </div>
+        <div class="row justify-content-center">
+            <img src="capybara.png" alt="Four images of capybaras chilling with other animals">
+        </div>
+    </div>
+
+    <div id="result2">
+        <div class="row justify-content-center">
+            <h1>Your result:</h1>
+        </div>
+        <div class="row justify-content-center">
+            <p>You are a polar bear!</p>
+        </div>
+        <div class="row justify-content-center">
+            <img src="polarbear.png" alt="Polar bear walking on ice">>
+        </div>
+    </div>
+
+    <div id="result3">
+        <div class="row justify-content-center">
+            <h1>Your result:</h1>
+        </div>
+        <div class="row justify-content-center">
+            <p>You are a chimpanzee! </p>
+        </div>
+        <div class="row justify-content-center">
+            <img src="chimp.png" alt="Two chimpanzees sitting in a tree">
+        </div>
+    </div>
+
+
+
+
+
+  </body>
