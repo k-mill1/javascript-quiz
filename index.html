@@ -22,7 +22,7 @@
                 <h2 class="text-center">Answer the questions to find out what animal you most resemble</h2>
                 <input type="button" value="Start Quiz" class="btn btn-success" onclick="startQuiz()"/>
             </div>
-            <form id="quizform">
+            
 
     <!--question 1-->
             <div id="question1">
@@ -100,7 +100,7 @@
                     <div class="col-8">
                         <div class="radio-toolbar">
                             <input type="radio" id="radio7" name="quest3" value=1>
-                            <label for="radio7">Fruit and healthy greens</label>
+                            <label for="radio7">Fruit</label>
                 
                             <input type="radio" id="radio8" name="quest3" value=2>
                             <label for="radio8">Fish</label>
@@ -174,18 +174,22 @@
                 <input type="button" value="Next" class="btn btn-success" onclick="results()"/>
                 </div>
             </div>
-        </form>      
+             
     <!--Results-->  
         <div id="results-intro" class="justify-content-center mx-auto">
             <h2 class="text-center">Your result:</h2>
             <p class="text-center" id="result"></p>
         </div>
+
         <div id="result1">
             <div class="row justify-content-center">
                 <p>You are a capybara!</p>
             </div>
             <div class="row justify-content-center">
                 <img src="capybara.png" alt="Four images of capybaras chilling with other animals">
+            </div>
+            <div class="row justify-content-center" id="backToStart">
+                <input type="button" value="Back to start" class="btn btn-success" onClick="window.location.reload()">
             </div>
         </div>
 
@@ -196,6 +200,9 @@
             <div class="row justify-content-center">
                 <img src="polarbear.png" alt="Polar bear walking on ice">
             </div>
+            <div class="row justify-content-center" id="backToStart">
+                <input type="button" value="Back to start" class="btn btn-success" onClick="window.location.reload()">
+            </div>
         </div>
 
         <div id="result3">
@@ -205,12 +212,25 @@
             <div class="row justify-content-center">
                 <img src="chimp.png" alt="Two chimpanzees sitting in a tree">
             </div>
+            <div class="row justify-content-center" id="backToStart">
+                <input type="button" value="Back to start" class="btn btn-success" onClick="window.location.reload()">
+            </div>
+        </div>
+
+        <div id="result4">
+            <div class="row justify-content-center">
+                <p>Your result could not be calculated. Based on your answers, you don't match any animals in this quiz. </p>
+            </div>
+            <div class="row justify-content-center">
+                <img src="saddog.png" alt="A sad dog lying on the floor, looking out of the window">
+            </div>
+            <div class="row justify-content-center" id="backToStart">
+                <input type="button" value="Back to start" class="btn btn-success" onClick="window.location.reload()">
+            </div>
         </div>
     </div>
 
     <!-- link to external JavaScript-->
     <script src="quizCode.js" type="text/javascript"></script>
-
-
 
   </body>
