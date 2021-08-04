@@ -27,7 +27,6 @@
             <form id="quizform">
 
     <!--question 1-->
-        <div id="questionarea">
             <div id="question1">
                 <div class="row justify-content-center">
                     <p>QUESTION 1/5</p>
@@ -177,47 +176,38 @@
                 <input type="button" value="Next" class="btn btn-success" onclick="results()"/>
                 </div>
             </div>
-        </div>
         </form>      
     <!--Results-->  
-    <div id="resultsarea">   
-    <div id="result1">
-        <div class="row justify-content-center">
-            <h1>Your result:</h1>
+        <div id="results-intro" class="justify-content-center mx-auto">
+            <h2 class="text-center">Your result:</h2>
+            <p class="text-center" id="result"></p>
         </div>
-        <div class="row justify-content-center">
-            <p>You are a capybara!</p>
+        <div id="result1">
+            <div class="row justify-content-center">
+                <p>You are a capybara!</p>
+            </div>
+            <div class="row justify-content-center">
+                <img src="capybara.png" alt="Four images of capybaras chilling with other animals">
+            </div>
         </div>
-        <div class="row justify-content-center">
-            <img src="capybara.png" alt="Four images of capybaras chilling with other animals">
-        </div>
-    </div>
 
+        <div id="result2">
+            <div class="row justify-content-center">
+                <p>You are a polar bear!</p>
+            </div>
+            <div class="row justify-content-center">
+                <img src="polarbear.png" alt="Polar bear walking on ice">
+            </div>
+        </div>
 
-    <div id="result2">
-        <div class="row justify-content-center">
-            <h1>Your result:</h1>
+        <div id="result3">
+            <div class="row justify-content-center">
+                <p>You are a chimpanzee! </p>
+            </div>
+            <div class="row justify-content-center">
+                <img src="chimp.png" alt="Two chimpanzees sitting in a tree">
+            </div>
         </div>
-        <div class="row justify-content-center">
-            <p>You are a polar bear!</p>
-        </div>
-        <div class="row justify-content-center">
-            <img src="polarbear.png" alt="Polar bear walking on ice">>
-        </div>
-    </div>
-
-    <div id="result3">
-        <div class="row justify-content-center">
-            <h1>Your result:</h1>
-        </div>
-        <div class="row justify-content-center">
-            <p>You are a chimpanzee! </p>
-        </div>
-        <div class="row justify-content-center">
-            <img src="chimp.png" alt="Two chimpanzees sitting in a tree">
-        </div>
-    </div>
-    </div>
 
     <!-- link to external JavaScript-->
     <script src="quizCode.js" type="text/javascript"></script>
