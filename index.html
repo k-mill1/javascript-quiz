@@ -24,9 +24,10 @@
                 <input type="button" value="Start Quiz" class="btn btn-success" onclick="startQuiz()"/>
                 <br/><br/>
             </div>
-        
+            <form id="quizform">
 
     <!--question 1-->
+        <div id="questionarea">
             <div id="question1">
                 <div class="row justify-content-center">
                     <p>QUESTION 1/5</p>
@@ -41,13 +42,13 @@
                     </div>
                     <div class="col-8">
                         <div class="radio-toolbar">
-                            <input type="radio" id="radio1" name="quest1">
+                            <input type="radio" id="radio1" name="quest1" value=1>
                             <label for="radio1">Lounging by the pool</label>
                 
-                            <input type="radio" id="radio2" name="quest1">
+                            <input type="radio" id="radio2" name="quest1" value=2>
                             <label for="radio2">Doing winter sports</label>
                 
-                            <input type="radio" id="radio3" name="quest1">
+                            <input type="radio" id="radio3" name="quest1" value=3>
                             <label for="radio3">Climbing</label> 
                         </div>
                     </div>
@@ -71,13 +72,13 @@
                     </div>
                     <div class="col-8">
                         <div class="radio-toolbar">
-                            <input type="radio" id="radio4" name="quest2">
+                            <input type="radio" id="radio4" name="quest2" value=1>
                             <label for="radio4">You instantly get along with everyone</label>
                 
-                            <input type="radio" id="radio5" name="quest2">
+                            <input type="radio" id="radio5" name="quest2" value=2>
                             <label for="radio5">You prefer to keep to yourself</label>
                 
-                            <input type="radio" id="radio6" name="quest2">
+                            <input type="radio" id="radio6" name="quest2" value=3>
                             <label for="radio6">You care about social status and making a good first impression</label> 
                         </div>
                     </div>
@@ -87,7 +88,7 @@
                 </div>
             </div>
     <!--question 3-->
-            <div id="question1">
+            <div id="question3">
                 <div class="row justify-content-center">
                     <p>QUESTION 3/5</p>
                 </div>
@@ -101,13 +102,13 @@
                     </div>
                     <div class="col-8">
                         <div class="radio-toolbar">
-                            <input type="radio" id="radio7" name="quest3">
+                            <input type="radio" id="radio7" name="quest3" value=1>
                             <label for="radio7">Fruit and healthy greens</label>
                 
-                            <input type="radio" id="radio8" name="quest3">
+                            <input type="radio" id="radio8" name="quest3" value=2>
                             <label for="radio8">Fish</label>
                 
-                            <input type="radio" id="radio9" name="quest3">
+                            <input type="radio" id="radio9" name="quest3" value=3>
                             <label for="radio9">Honey</label> 
                         </div>
                     </div>
@@ -117,7 +118,7 @@
                 </div>
             </div>         
     <!--question 4-->
-            <div id="question1">
+            <div id="question4">
                 <div class="row justify-content-center">
                     <p>QUESTION 4/5</p>
                 </div>
@@ -131,13 +132,13 @@
                     </div>
                     <div class="col-8">
                         <div class="radio-toolbar">
-                            <input type="radio" id="radio10" name="quest4">
+                            <input type="radio" id="radio10" name="quest4" value=1>
                             <label for="radio10">South America</label>
                 
-                            <input type="radio" id="radio11" name="quest4">
+                            <input type="radio" id="radio11" name="quest4" value=2>
                             <label for="radio11">Canada</label>
                 
-                            <input type="radio" id="radio12" name="quest4">
+                            <input type="radio" id="radio12" name="quest4" value=3>
                             <label for="radio12">Africa</label> 
                         </div>
                     </div>
@@ -147,7 +148,7 @@
                 </div>
             </div>         
     <!--question 5-->
-            <div id="question1">
+            <div id="question5">
                 <div class="row justify-content-center">
                     <p>QUESTION 5/5</p>
                 </div>
@@ -161,13 +162,13 @@
                     </div>
                     <div class="col-8">
                         <div class="radio-toolbar">
-                            <input type="radio" id="radio13" name="quest5">
+                            <input type="radio" id="radio13" name="quest5" value=1>
                             <label for="radio13">Mellow and relaxed</label>
                 
-                            <input type="radio" id="radio14" name="quest5">
+                            <input type="radio" id="radio14" name="quest5" value=2>
                             <label for="radio14">Confident and fierce</label>
                 
-                            <input type="radio" id="radio15" name="quest5">
+                            <input type="radio" id="radio15" name="quest5" value=3>
                             <label for="radio15">Intelligent and conscientious</label> 
                         </div>
                     </div>
@@ -175,8 +176,11 @@
                     </div>
                 <input type="button" value="Next" class="btn btn-success" onclick="results()"/>
                 </div>
-            </div>         
-    <!--Results-->       
+            </div>
+        </div>
+        </form>      
+    <!--Results-->  
+    <div id="resultsarea">   
     <div id="result1">
         <div class="row justify-content-center">
             <h1>Your result:</h1>
@@ -188,6 +192,7 @@
             <img src="capybara.png" alt="Four images of capybaras chilling with other animals">
         </div>
     </div>
+
 
     <div id="result2">
         <div class="row justify-content-center">
@@ -212,8 +217,10 @@
             <img src="chimp.png" alt="Two chimpanzees sitting in a tree">
         </div>
     </div>
+    </div>
 
-
+    <!-- link to external JavaScript-->
+    <script src="quizCode.js" type="text/javascript"></script>
 
 
 
