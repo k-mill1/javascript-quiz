@@ -11,6 +11,7 @@ window.onload = function() {
   document.getElementById('result1').style.display = 'none';
   document.getElementById('result2').style.display = 'none';
   document.getElementById('result3').style.display = 'none';
+  document.getElementById('result4').style.display = 'none';
   document.getElementById('results-intro').style.display = 'none';
 }
 /**
@@ -73,6 +74,7 @@ function calculateResults() {
   for (const rb of radios1) {
       if (rb.checked) {
           q1Value = rb.value;
+          array.push(q1Value);
           break;
       }
   }
@@ -82,6 +84,7 @@ function calculateResults() {
   for (const rb of radios2) {
       if (rb.checked) {
           q2Value = rb.value;
+          array.push(q2Value);
           break;
       }
   }
@@ -91,6 +94,7 @@ function calculateResults() {
   for (const rb of radios3) {
       if (rb.checked) {
           q3Value = rb.value;
+          array.push(q3Value);
           break;
       }
   }
@@ -100,6 +104,7 @@ function calculateResults() {
   for (const rb of radios4) {
       if (rb.checked) {
           q4Value = rb.value;
+          array.push(q4Value);
           break;
       }
   }
@@ -109,19 +114,36 @@ function calculateResults() {
   for (const rb of radios5) {
       if (rb.checked) {
           q5Value = rb.value;
+          array.push(q5Value);
           break;
       }
   }
-
+  var a = 0;
+  for(var i = 0; i < array.length; ++i){
+      if(array[i] == 1)
+          a++;
+  }
+  var b = 0;
+for(var i = 0; i < array.length; ++i){
+    if(array[i] == 2)
+        b++;
+}
+  var c = 0;
+  for(var i = 0; i < array.length; ++i){
+      if(array[i] == 3)
+          c++;
+  }
 
   let result = Number(q1Value) + Number(q2Value) + Number(q3Value) + Number(q4Value) + Number(q5Value);
 
-  if (result < 8 ) {
+  if (a > 2 ) {
     document.getElementById("result1").style.display = "block";
-  } else if (result == 10) {
+  } else if (b > 2) {
     document.getElementById("result2").style.display = "block";
-  } else {
+  } else if (c > 2) {
     document.getElementById("result3").style.display = "block";
+  } else {
+    document.getElementById("result4").style.display = "block";
   }
 
 }
