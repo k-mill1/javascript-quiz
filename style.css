@@ -1,9 +1,10 @@
 .container {
-    background-color: rgb(240, 239, 241);
+    background-color: rgb(255, 255, 255);
     margin-left:50px;
-    margin-top:50px;
-    padding-top:15px;
+    margin-top:20px;
+    padding-top:10px;
     padding-bottom:15px;
+    width:800px;
 }
 .radio-toolbar input[type="radio"] {
     opacity: 0;
@@ -26,4 +27,15 @@
 .radio-toolbar label:hover {
     background-color: rgb(177, 161, 223);
     cursor:pointer;
+}
+
+h2 {
+    font-size:22px;
+    margin-top:15px;
+    margin-bottom:15px;
+}
+
+#questiontop {
+    font-size:14px;
+    font-weight: bold;
 }

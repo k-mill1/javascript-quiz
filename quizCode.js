@@ -67,6 +67,7 @@ function question5() {
  * calculates and displays the results
  */
 function calculateResults() {
+  let array=[]
   const radios1 = document.querySelectorAll('input[name="quest1"]');
   let q1Value;
   for (const rb of radios1) {
@@ -112,14 +113,16 @@ function calculateResults() {
       }
   }
 
+
   let result = Number(q1Value) + Number(q2Value) + Number(q3Value) + Number(q4Value) + Number(q5Value);
 
-  if (result == 15 ) {
-    document.getElementById("result3").style.display = "block";
+  if (result < 8 ) {
+    document.getElementById("result1").style.display = "block";
   } else if (result == 10) {
     document.getElementById("result2").style.display = "block";
   } else {
-    document.getElementById("result1").style.display = "block";
+    document.getElementById("result3").style.display = "block";
   }
+
 }
 
