@@ -20,7 +20,7 @@
             <div id="intro" class="text-center">
                 <img src="animals.png" alt="Silhouttes of African animals in the sunset">
                 <h2 class="text-center">Answer the questions to find out what animal you most resemble</h2>
-                <input type="button" value="Start Quiz" class="btn btn-success" onclick="startQuiz()"/>
+                <input type="button" value="Start Quiz" class="btn btn-success" onclick="nextPage('intro','question1')"/>
             </div>
             
 
@@ -51,7 +51,7 @@
                     </div>
                     <div class="col-2">             
                     </div>
-                <input type="button" value="Next" class="btn btn-success" onclick="question2()"/>
+                <input type="button" value="Next" class="btn btn-success" onclick="nextPage('question1','question2')"/>
                 </div>
             </div>
     <!--question 2-->
@@ -81,7 +81,7 @@
                     </div>
                     <div class="col-2">             
                     </div>
-                <input type="button" value="Next" class="btn btn-success" onclick="question3()"/>
+                <input type="button" value="Next" class="btn btn-success" onclick="nextPage('question2','question3')"/>
                 </div>
             </div>
     <!--question 3-->
@@ -111,7 +111,7 @@
                     </div>
                     <div class="col-2">             
                     </div>
-                <input type="button" value="Next" class="btn btn-success" onclick="question4()"/>
+                <input type="button" value="Next" class="btn btn-success" onclick="nextPage('question3','question4')"/>
                 </div>
             </div>         
     <!--question 4-->
@@ -141,7 +141,7 @@
                     </div>
                     <div class="col-2">             
                     </div>
-                <input type="button" value="Next" class="btn btn-success" onclick="question5()"/>
+                <input type="button" value="Next" class="btn btn-success" onclick="nextPage('question4','question5')"/>
                 </div>
             </div>         
     <!--question 5-->
@@ -171,13 +171,13 @@
                     </div>
                     <div class="col-2">             
                     </div>
-                <input type="button" value="Next" class="btn btn-success" onclick="results()"/>
+                <input type="button" value="Next" class="btn btn-success" onclick="results('question5',5)"/>
                 </div>
             </div>
              
     <!--Results-->  
         <div id="results-intro" class="justify-content-center mx-auto">
-            <h2 class="text-center">Your result:</h2>
+            <h3 class="text-center">Your result:</h3>
             <p class="text-center" id="result"></p>
         </div>
 
@@ -189,7 +189,7 @@
                 <img src="capybara.png" alt="Four images of capybaras chilling with other animals">
             </div>
             <div class="row justify-content-center" id="backToStart">
-                <input type="button" value="Back to start" class="btn btn-success" onClick="window.location.reload()">
+                <input type="button" value="Back to Start" class="btn btn-success" onClick="window.location.reload()">
             </div>
         </div>
 
@@ -201,7 +201,7 @@
                 <img src="polarbear.png" alt="Polar bear walking on ice">
             </div>
             <div class="row justify-content-center" id="backToStart">
-                <input type="button" value="Back to start" class="btn btn-success" onClick="window.location.reload()">
+                <input type="button" value="Back to Start" class="btn btn-success" onClick="window.location.reload()">
             </div>
         </div>
 
@@ -213,7 +213,7 @@
                 <img src="chimp.png" alt="Two chimpanzees sitting in a tree">
             </div>
             <div class="row justify-content-center" id="backToStart">
-                <input type="button" value="Back to start" class="btn btn-success" onClick="window.location.reload()">
+                <input type="button" value="Back to Start" class="btn btn-success" onClick="window.location.reload()">
             </div>
         </div>
 
@@ -225,7 +225,7 @@
                 <img src="saddog.png" alt="A sad dog lying on the floor, looking out of the window">
             </div>
             <div class="row justify-content-center" id="backToStart">
-                <input type="button" value="Back to start" class="btn btn-success" onClick="window.location.reload()">
+                <input type="button" value="Back to Start" class="btn btn-success" onClick="window.location.reload()">
             </div>
         </div>
     </div>
