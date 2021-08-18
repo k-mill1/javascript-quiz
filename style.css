@@ -5,6 +5,7 @@
     padding-top:10px;
     padding-bottom:15px;
     width:800px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 .radio-toolbar input[type="radio"] {
     opacity: 0;
@@ -20,6 +21,7 @@
     border: 2px solid #444;
     border-radius: 4px;
 }
+
 .radio-toolbar input[type="radio"]:checked + label {
     background-color:rgb(177, 161, 223);
     border-color: rgb(77, 63, 117);
