@@ -1,3 +1,18 @@
+/* eslint-disable linebreak-style */
+/**
+ * hides element by id
+ */
+function hideElement(id) {
+  document.getElementById(id).style.display = 'none';
+}
+
+/**
+ * shows element by id
+ */
+function showElement(id) {
+  document.getElementById(id).style.display = 'block';
+}
+
 /**
  * hides element by id
  */
